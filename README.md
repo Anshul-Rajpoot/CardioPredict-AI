@@ -171,7 +171,7 @@ Evaluation Metrics Used
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/CardioPredict-AI.git
+git clone https://github.com/Anshul-Rajpoot/CardioPredict-AI.git
 
 cd CardioPredict-AI
 ```
@@ -222,20 +222,6 @@ streamlit run app.py
 
 ---
 
-## 📷 Application Preview
-
-### Dashboard
-
-Add Screenshot
-
----
-
-### Prediction
-
-Add Screenshot
-
----
-
 ## 💡 Future Improvements
 
 - Deploy on Streamlit Community Cloud
@@ -265,21 +251,3 @@ LinkedIn
 https://www.linkedin.com/in/anshul-rajpoot-39327328b
 
 ---
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-Feel free to use and modify it for educational purposes.
-
----
-
-# ❤️ Thank You
-
-*"Predicting Heart Disease with Machine Learning for Better Healthcare Decisions."*
