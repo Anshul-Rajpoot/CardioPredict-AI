@@ -204,12 +204,12 @@ with left:
         key="gender"
     )
 
-    age = st.number_input(
-        "Age (Days)",
-        min_value=10000,
-        max_value=30000,
-        value=18000,
-        key="age"
+     age_months = st.number_input(
+        "Age (Months)",
+        min_value=12,
+        max_value=1200,
+        value=600,
+        key="age_months"
     )
 
     height = st.number_input(
@@ -298,6 +298,9 @@ with right:
 # BMI CALCULATOR
 # ==========================================================
 
+
+age_days = int(round(age_months * 30.4375))
+
 st.markdown("---")
 
 st.subheader("📊 Health Indicators")
@@ -361,6 +364,7 @@ with col3:
 st.markdown("---")
 
 # ==========================================================
+# ==========================================================
 # CREATE INPUT DATAFRAME
 # ==========================================================
 
@@ -368,7 +372,7 @@ patient = pd.DataFrame({
 
     "country":[country],
     "active":[active],
-    "age":[age],
+    "age":[age_days],
     "alco":[alco],
     "ap_hi":[ap_hi],
     "ap_lo":[ap_lo],
@@ -500,6 +504,7 @@ if predict:
 
     st.markdown("---")
 
+
 # ==========================================================
 # PATIENT SUMMARY
 # ==========================================================
@@ -513,7 +518,7 @@ if predict:
             "Country",
             "Occupation",
             "Gender",
-            "Age (Days)",
+            "Age (Months)",
             "Height (cm)",
             "Weight (kg)",
             "BMI",
@@ -534,7 +539,7 @@ if predict:
 
             "Male" if gender==1 else "Female",
 
-            age,
+            age_months,
 
             height,
 
