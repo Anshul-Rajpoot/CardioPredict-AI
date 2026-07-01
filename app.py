@@ -204,7 +204,7 @@ with left:
         key="gender"
     )
 
-     age_months = st.number_input(
+    age_months = st.number_input(
         "Age (Months)",
         min_value=12,
         max_value=1200,
@@ -298,7 +298,6 @@ with right:
 # BMI CALCULATOR
 # ==========================================================
 
-
 age_days = int(round(age_months * 30.4375))
 
 st.markdown("---")
@@ -363,7 +362,6 @@ with col3:
 
 st.markdown("---")
 
-# ==========================================================
 # ==========================================================
 # CREATE INPUT DATAFRAME
 # ==========================================================
@@ -503,7 +501,6 @@ if predict:
 """)
 
     st.markdown("---")
-
 
 # ==========================================================
 # PATIENT SUMMARY
